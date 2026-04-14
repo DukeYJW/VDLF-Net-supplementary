@@ -95,18 +95,12 @@ The supplementary package includes runnable source code, scripts, raw experiment
 
 ## Contact
 
-For reproduction questions, contact the corresponding author (add email here).
+**Jiawei Yan** — Shanghai Jiao Tong University  
+
+For questions about reproducing these experiments or accessing the materials: **[yjw1998@sjtu.edu.cn](mailto:yjw1998@sjtu.edu.cn)**
 
 ---
 
-## Push to GitHub (after you create an empty repo)
+**Repository:** [https://github.com/DukeYJW/VDLF-Net-supplementary](https://github.com/DukeYJW/VDLF-Net-supplementary)  
 
-```bash
-cd "c:\Users\15366\Desktop\To Github\VDLF-Net-supplementary-upload"
-git remote add origin https://github.com/YOUR_USER/YOUR_REPO.git
-git push -u origin main
-```
-
-Use a **Personal Access Token** (classic) as the password when GitHub prompts, or install [GitHub CLI](https://cli.github.com/) (`gh auth login`).
-
-If you clone this repo and need the full data/checkpoints, download the Zenodo ZIP using the DOI above.
+If you clone this repository and need the full datasets and checkpoints, download the **Zenodo** ZIP using the DOI under **Full supplementary archive (Zenodo)** above.
