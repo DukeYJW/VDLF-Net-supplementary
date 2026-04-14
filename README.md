@@ -6,7 +6,7 @@ Official supplementary code and experimental materials for the manuscript:
 
 *(Pattern Analysis and Applications — reproducibility package.)*
 
-This repository preserves the **working layout** used by the authors: runnable code, notebooks, shell scripts, raw result tables (CSV), and implementation notes. Large pretrained weights and full dataset archives are **not** hosted on GitHub due to file-size limits; they are distributed via **Dropbox** (links below — **replace the placeholders** after you upload).
+This repository preserves the **working layout** used by the authors: runnable code, notebooks, shell scripts, raw result tables (CSV), and implementation notes. Large pretrained weights and full dataset archives are **not** hosted on GitHub due to file-size limits. The **complete supplementary ZIP** (code, datasets, checkpoints, and tables as in our experiments) is archived on **Zenodo** (see below).
 
 ---
 
@@ -63,20 +63,14 @@ python check_mini_imagenet.py --data_dir data/mini-imagenet
 
 ---
 
-## External large files (Dropbox) — **edit these URLs**
+## Full supplementary archive (Zenodo)
 
-Due to GitHub limits (~100 MB per file; large repositories are discouraged), the following are **not** in this repo:
+Due to GitHub limits (~100 MB per file; large repositories are discouraged), this repository does **not** include full datasets or `.pth` checkpoints. Download the **complete ZIP** used in the paper from Zenodo:
 
-1. **Pretrained / baseline checkpoints for Experiment 2** (e.g. `best_vdlf_model.pth`, `best_matchnet.pth`, `best_protonet.pth` in the project root of `experiment_2/` in the original workspace).  
-   **Download:** `REPLACE_WITH_DROPBOX_LINK_CHECKPOINTS_EXP2`
+- **DOI:** [https://doi.org/10.5281/zenodo.19580381](https://doi.org/10.5281/zenodo.19580381)  
+- **Record page:** [https://zenodo.org/records/19580381](https://zenodo.org/records/19580381)
 
-2. **Ablation checkpoints** (`best_ablation_*.pth` in `experiment_ablation/ablation_checkpoints/` in the original archive).  
-   **Download:** `REPLACE_WITH_DROPBOX_LINK_CHECKPOINTS_ABLATION`
-
-3. **Full dataset archives** (CIFAR-100 extract; Mini-ImageNet prepared tree).  
-   **Download:** `REPLACE_WITH_DROPBOX_LINK_DATASETS`
-
-After download, place files according to the **`README.md`** files in:
+The archive contains `exp1codes/`, `experiment_1/`, `experiment_2/`, and `experiment_ablation/` with data and checkpoints as in our working environment. After unzip, place or merge folders so that paths match the **`README.md`** files under:
 
 - `exp1codes/data/`
 - `experiment_1/data/`
@@ -95,7 +89,7 @@ After download, place files according to the **`README.md`** files in:
 
 ## Note to editors / reviewers
 
-The supplementary package includes runnable source code, scripts, raw experimental tables, and implementation notes. Large checkpoints and full dataset archives are shared via **Dropbox links in this README** because of GitHub file-size limits.
+The supplementary package includes runnable source code, scripts, raw experimental tables, and implementation notes. The **complete archive** (including large checkpoints and full dataset trees) is available on **Zenodo** via the DOI above; this GitHub repository provides a lightweight, browsable copy of the code and tables.
 
 ---
 
@@ -115,4 +109,4 @@ git push -u origin main
 
 Use a **Personal Access Token** (classic) as the password when GitHub prompts, or install [GitHub CLI](https://cli.github.com/) (`gh auth login`).
 
-Then edit this `README.md` on GitHub or locally: replace the three `REPLACE_WITH_DROPBOX_LINK_*` placeholders with your Dropbox share links.
+If you clone this repo and need the full data/checkpoints, download the Zenodo ZIP using the DOI above.
