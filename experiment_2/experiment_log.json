@@ -1,0 +1,193 @@
+[
+  {
+    "timestamp": "2025-02-10Tmanual",
+    "note": "手动记录：VDLF 1-shot (load checkpoint 评估); Proto/Match 1-shot (notebook 历史输出)",
+    "settings": {
+      "dataset": "mini-imagenet",
+      "image_size": 84,
+      "n_way": 5,
+      "k_shot": 1,
+      "q_query": 15,
+      "num_train_episodes": 2000,
+      "num_test_episodes": 100,
+      "batch_size": 4,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "latent_dim": 128,
+      "num_samples": 10,
+      "temperature": 10.0,
+      "alpha": 0.02
+    },
+    "1shot": {
+      "MAML": null,
+      "Prototypical Networks": {
+        "acc": 48.37,
+        "ci": 1.92,
+        "train_time_s": 282.3,
+        "test_time_s": 11.1
+      },
+      "Matching Networks": {
+        "acc": 49.28,
+        "ci": 2.14,
+        "train_time_s": 294.0,
+        "test_time_s": 9.6
+      },
+      "VDLF-Net": {
+        "acc": 58.73,
+        "ci": 2.12,
+        "train_time_s": null,
+        "test_time_s": 9.2
+      }
+    },
+    "5shot": {}
+  },
+  {
+    "timestamp": "2026-02-11T22:29:22.715375",
+    "note": "train_ep=50, test_ep=10",
+    "settings": {
+      "dataset": "mini-imagenet",
+      "image_size": 84,
+      "num_train_classes": 64,
+      "num_val_classes": 16,
+      "num_test_classes": 20,
+      "n_way": 5,
+      "k_shot": 1,
+      "q_query": 15,
+      "num_test_episodes": 10,
+      "num_train_episodes": 50,
+      "batch_size": 4,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "num_epochs": 100,
+      "latent_dim": 128,
+      "num_scales": 2,
+      "num_samples": 10,
+      "temperature": 10.0,
+      "alpha": 0.02,
+      "device": "cuda",
+      "seed": 42
+    },
+    "1shot": {
+      "MAML": null,
+      "Prototypical Networks": {
+        "acc": 65.07,
+        "ci": 7.34,
+        "train_time_s": 85.6,
+        "test_time_s": 5.6
+      },
+      "Matching Networks": {
+        "acc": 63.33,
+        "ci": 4.5,
+        "train_time_s": 96.2,
+        "test_time_s": 5.7
+      },
+      "VDLF-Net": {
+        "acc": 64.13,
+        "ci": 4.53,
+        "train_time_s": 547.1,
+        "test_time_s": 5.6
+      }
+    },
+    "5shot": {}
+  },
+  {
+    "timestamp": "2026-02-12T11:58:48.529742",
+    "note": "train_ep=150, test_ep=100",
+    "settings": {
+      "dataset": "mini-imagenet",
+      "image_size": 84,
+      "num_train_classes": 64,
+      "num_val_classes": 16,
+      "num_test_classes": 20,
+      "n_way": 5,
+      "k_shot": 1,
+      "q_query": 15,
+      "num_test_episodes": 100,
+      "num_train_episodes": 150,
+      "batch_size": 1,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 5e-05,
+      "num_epochs": 100,
+      "latent_dim": 128,
+      "num_scales": 2,
+      "num_samples": 15,
+      "temperature": 15.0,
+      "alpha": 0.01,
+      "device": "cuda",
+      "seed": 42
+    },
+    "1shot": {
+      "MAML": null,
+      "Prototypical Networks": {
+        "acc": 56.8,
+        "ci": 1.84,
+        "train_time_s": 44.6,
+        "test_time_s": 11.0
+      },
+      "Matching Networks": {
+        "acc": 61.87,
+        "ci": 2.02,
+        "train_time_s": 42.2,
+        "test_time_s": 14.1
+      },
+      "VDLF-Net": {
+        "acc": 70.72,
+        "ci": 2.03,
+        "train_time_s": 300.1,
+        "test_time_s": 19.0
+      }
+    },
+    "5shot": {}
+  },
+  {
+    "timestamp": "2026-02-12T12:14:32.117429",
+    "note": "train_ep=150, test_ep=100",
+    "settings": {
+      "dataset": "mini-imagenet",
+      "image_size": 84,
+      "num_train_classes": 64,
+      "num_val_classes": 16,
+      "num_test_classes": 20,
+      "n_way": 5,
+      "k_shot": 5,
+      "q_query": 15,
+      "num_test_episodes": 100,
+      "num_train_episodes": 150,
+      "batch_size": 1,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 5e-05,
+      "num_epochs": 100,
+      "latent_dim": 128,
+      "num_scales": 2,
+      "num_samples": 15,
+      "temperature": 15.0,
+      "alpha": 0.01,
+      "device": "cuda",
+      "seed": 42
+    },
+    "1shot": {},
+    "5shot": {
+      "MAML": null,
+      "Prototypical Networks": {
+        "acc": 80.09,
+        "ci": 1.14,
+        "train_time_s": 49.7,
+        "test_time_s": 12.0
+      },
+      "Matching Networks": {
+        "acc": 68.87,
+        "ci": 1.87,
+        "train_time_s": 49.6,
+        "test_time_s": 11.6
+      },
+      "VDLF-Net": {
+        "acc": 86.33,
+        "ci": 1.17,
+        "train_time_s": 306.4,
+        "test_time_s": 13.0
+      }
+    }
+  }
+]

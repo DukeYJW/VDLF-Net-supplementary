@@ -1,0 +1,8 @@
+ablation,drop_kl,drop_recon,gating_mode,mean_acc,ci95,train_sec,test_sec,ckpt
+full,False,False,learned,86.12,1.15,294.9,14.3,best_ablation_full.pth
+no_kl,True,False,learned,86.32,1.14,298.7,12.2,best_ablation_no_kl.pth
+no_recon,False,True,learned,86.08,1.2,246.3,12.1,best_ablation_no_recon.pth
+no_var,True,True,learned,86.27,1.16,249.3,11.9,best_ablation_no_var.pth
+uniform_gate,False,False,uniform,86.01,1.13,294.2,12.2,best_ablation_uniform_gate.pth
+fine_scale_only,False,False,fine_only,87.36,1.13,296.6,12.1,best_ablation_fine_scale_only.pth
+coarse_scale_only,False,False,coarse_only,85.28,1.19,947.5,11.5,best_ablation_coarse_scale_only.pth
