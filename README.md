@@ -102,3 +102,17 @@ The supplementary package includes runnable source code, scripts, raw experiment
 ## Contact
 
 For reproduction questions, contact the corresponding author (add email here).
+
+---
+
+## Push to GitHub (after you create an empty repo)
+
+```bash
+cd "c:\Users\15366\Desktop\To Github\VDLF-Net-supplementary-upload"
+git remote add origin https://github.com/YOUR_USER/YOUR_REPO.git
+git push -u origin main
+```
+
+Use a **Personal Access Token** (classic) as the password when GitHub prompts, or install [GitHub CLI](https://cli.github.com/) (`gh auth login`).
+
+Then edit this `README.md` on GitHub or locally: replace the three `REPLACE_WITH_DROPBOX_LINK_*` placeholders with your Dropbox share links.
